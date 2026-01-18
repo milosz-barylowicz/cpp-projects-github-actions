@@ -29,18 +29,18 @@ jobs:
     runs-on: [ 'ubuntu-24.04' ]
 
     steps:
-    - uses: actions/checkout@v5.0.0
+    - uses: actions/checkout@v6.0.1
     - uses: de-vri-es/setup-git-credentials@v2.1.2
       with:
         credentials: ${{ secrets.GH_TOKEN }}
     - uses: milosz-barylowicz/cpp-projects-github-actions/python3-upgrade@main
       with:
-        python3-version: '13'
+        python3-version: '15'
         operating-system: 'ubuntu-24.04'
 
-    - name: Python3-venv-creation
+    - name: python3-venv-creation
       run: |
-        python3.13 -m venv venv && \
+        python3.15 -m venv venv && \
         source venv/bin/activate
     - name: creating-release
       if: inputs.release-title == ''

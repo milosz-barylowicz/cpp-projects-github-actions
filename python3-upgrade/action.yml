@@ -3,7 +3,7 @@ description: "Upgrading Python3 package on different operating systems"
 inputs:
   python3-version:
     description: "Python3 version which should be installed"
-    default: "13"
+    default: "15"
     required: true
   operating-system:
     description: "Base operating system which Python3 package should be upgraded. Available options: ubuntu-24.04/windows-2022/macos-14"
