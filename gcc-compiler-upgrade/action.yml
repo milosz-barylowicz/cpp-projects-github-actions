@@ -3,7 +3,7 @@ description: "Upgrade GCC on Linux before compiling C++ project"
 inputs:
   gcc-version:
     desciption: "GCC version which should be installed"
-    default: "14"
+    default: "15"
     required: true
   ubuntu-version:
     description: "Ubuntu version that GitHub Actions uses in project"

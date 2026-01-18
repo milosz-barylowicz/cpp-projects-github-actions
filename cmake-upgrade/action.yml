@@ -4,7 +4,7 @@ description: "Upgrade CMake on Linux before compiling C++ project"
 inputs:
   cmake-version:
     description: "CMake version which should be installed"
-    default: "3.30.3"
+    default: "4.2"
     required: true
   target-os:
     description: "Operating system which will be used to upgrade CMake package. Options: ubuntu-24.04/windows-2022/macos-14"
